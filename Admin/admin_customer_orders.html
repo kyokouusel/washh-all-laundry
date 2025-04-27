@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Customer Orders</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Customer Order History</h2>
+
+<!-- Form to enter Customer ID -->
+<form method="post" action="admin_customer_orders.php">
+    <label for="customer_id">Enter Customer ID:</label>
+    <input type="text" id="customer_id" name="customer_id" required>
+    <input type="submit" value="Search Orders">
+</form>
+
+<br>
+<a href="admindashboard.html">Back to Dashboard</a> | 
+<a href="admin_orders.html">Manage Orders</a>
+
+</body>
+</html>
