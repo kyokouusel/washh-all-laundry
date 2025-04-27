@@ -1,24 +1,4 @@
-<?php
-session_start();
-include 'config.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = mysqli_real_escape_string($conn, $_POST['username']);
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    // Insert admin credentials into the database
-    $sql = "INSERT INTO admin (username, password) VALUES ('$username', '$hashed_password')";
-
-    if (mysqli_query($conn, $sql)) {
-        echo "Admin registered successfully!";
-    } else {
-        echo "Error: " . mysqli_error($conn);
-    }
-
-    mysqli_close($conn);
-}
-?>
 
 <!DOCTYPE html>
 <html>
