@@ -22,7 +22,7 @@ function logout() {
     // Add logout functionality here, e.g., redirecting to a logout page or clearing session cookies
     alert("You have logged out!");
     // Redirect to logout page or perform necessary logout actions
-    window.location.href = '../main.html'; 
+    window.location.href = '../index.html'; 
 }
 
     document.getElementById('orderForm1').addEventListener('submit', function(event) {
@@ -37,5 +37,5 @@ function logout() {
         alert('Your order has been placed!');
         // Optional: Close the form or reset it after order submission
         // document.getElementById('orderForm2').reset(); // To reset the form
-        window.location.href = '../main.html'; 
+        window.location.href = '../index.html'; 
     });
